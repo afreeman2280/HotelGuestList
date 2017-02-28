@@ -1,0 +1,73 @@
+﻿@model LearningMVC2.Models.UserViewModel
+@{
+    ViewBag.Title = "Registar";
+}
+
+<h2>Registar</h2>
+
+ @using (Html.BeginForm("Registar", "User", FormMethod.Post))
+ {
+    <div>
+        <div >
+            @Html.LabelFor(m => m.SingleUser.UserName)
+        
+            @Html.TextBoxFor(m => m.SingleUser.UserName, new { @class = "DivTextBoxPlaceMent" })
+        </div>
+        <div>
+            @Html.LabelFor(m => m.SingleUser.Password)
+         
+            @Html.TextBoxFor(m => m.SingleUser.Password, new { @class = "DivTextBoxPlaceMent" })
+
+        </div>
+        <div>
+            @Html.LabelFor(m => m.SingleUser.Email)
+            @Html.TextBoxFor(m => m.SingleUser.Email, new { @class = "TextBoxPosition" })
+
+        </div>
+        <div>
+            @Html.LabelFor(m => m.SingleUser.Birthdate)
+            @Html.TextBoxFor(m => m.SingleUser.Birthdate, new { @class = "TextBoxPosition" })
+
+        </div>
+        <div>
+            @Html.LabelFor(m => m.SingleUser.StreetAddress)
+            @Html.TextBoxFor(m => m.SingleUser.StreetAddress, new { @class = "TextBoxPosition" })
+
+        </div>
+        <div>
+            @Html.LabelFor(m => m.SingleUser.City)
+            @Html.TextBoxFor(m => m.SingleUser.City, new { @class = "TextBoxPosition" })
+
+        </div>
+        <div>
+            @Html.LabelFor(m => m.SingleUser.State)
+            @Html.TextBoxFor(m => m.SingleUser.State, new { @class = "TextBoxPosition" })
+        </div>
+        <div>
+            @Html.LabelFor(m => m.SingleUser.Zipcode)
+            @Html.TextBoxFor(m => m.SingleUser.Zipcode, new { @class = "TextBoxPosition" })
+        </div>
+        <div>
+            @Html.LabelFor(m => m.SingleUser.PhoneNumber)
+            @Html.TextBoxFor(m => m.SingleUser.PhoneNumber, new { @class = "TextBoxPosition" })
+        </div>
+        <div>
+            @Html.LabelFor(m => m.SingleUser.SecurityQuestion)
+            @Html.TextBoxFor(m => m.SingleUser.SecurityQuestion, new { @class = "TextBoxPosition" })
+        </div>
+        <div>
+            @Html.LabelFor(m => m.SingleUser.SecurityAnswer)
+            @Html.TextBoxFor(m => m.SingleUser.SecurityAnswer, new { @class = "TextBoxPosition" })
+        </div>
+        <div>
+            @Html.LabelFor(m => m.SingleUser.FirstName)
+            @Html.TextBoxFor(m => m.SingleUser.FirstName, new { @class = "TextBoxPosition" })
+        </div>
+        <div>
+            @Html.LabelFor(m => m.SingleUser.LastName)
+            @Html.TextBoxFor(m => m.SingleUser.LastName, new { @class = "TextBoxPosition" })
+
+        </div>
+        <input type="Submit" value="Submit" />
+    </div>
+ }

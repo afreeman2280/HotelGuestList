@@ -1,0 +1,20 @@
+﻿.TextBoxPosition{
+    width: 150px;
+
+}
+
+.DivTextBoxPosition{
+      height: 115px;
+    text-align: center;
+    margin-top: 100px;
+}
+.LabelSpacing{
+        width:30px;
+}
+.DivLabelPlaceMent{
+    margin-left: 0%;
+}
+.DivTextBoxPlaceMent{
+    width 150px;
+    margin-left: 69px;
+}

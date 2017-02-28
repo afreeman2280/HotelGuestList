@@ -1,0 +1,23 @@
+﻿@model LearningMVC2.Models.UserViewModel
+@{
+    ViewBag.Title = "Login";
+}
+
+<h2>Login</h2>
+
+@using (Html.BeginForm("Login","User",FormMethod.Post))
+{
+   <div class="DivTextBoxPosition">
+       <div >
+           @Html.LabelFor(m => m.SingleUser.UserName)
+           @Html.TextBoxFor(m => m.SingleUser.UserName, new {@class = "TextBoxPosition" })
+       </div>
+       <div>
+           @Html.LabelFor(m => m.SingleUser.Password)
+           @Html.TextBoxFor(m => m.SingleUser.UserName, new { @class = "TextBoxPosition" })
+      
+       </div>
+       <input type="Submit" value="Submit" />
+   </div>
+  
+}
